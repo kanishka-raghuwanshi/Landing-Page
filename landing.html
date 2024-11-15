@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+  <div class="layout-container">
+
+    <div class="left-background"></div>
+
+    
+    <div class="main-content">
+      
+  
+      <header>
+        <div class="container">
+          <h1>Calm Nest</h1>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#support-group">Support Group</a>
+          <a href="#meditation">Guided Meditation</a>
+            <a href="#mood-tracking">Mood Tracking</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Track Your Moods, Empower Your Mind</h2>
+          <p>Discover patterns in your emotions, reflect on your well-being, and take control of your mental health journey. With our mood tracking tools, self-awareness has never been simpler.</p>
+          <a href="#about" class="cta-button">Start Tracking Today</a>
+        </div>
+      </section>
+
+     
+      <section id="about" class="about">
+        <div class="container">
+          <h3>About Us</h3>
+          <p>At Calm Nest, we believe that understanding your emotions is the first step toward a balanced and fulfilling life. Our platform is designed to help you track your moods, identify patterns, and gain insights into your mental well-being. Whether you're seeking to improve self-awareness, manage stress, or simply reflect on your day, our tools make it easy to stay connected with your feelings. Together, we aim to create a safe space for personal growth and emotional empowerment.</p>
+        </div>
+      </section>
+      
+      
+
+      <section id="support-group" class="container">
+        <h2>Anonymous Support Group</h2>
+        <div id="chat-box">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-message">Send</button>
+        </div>
+    </section>
+
+    <section id="meditation" class="container">
+        <h2>Guided Meditation</h2>
+        <button id="start-meditation">Start Meditation</button>
+        <div id="meditation-audio" >
+            <audio controls id="audio-player">
+                <source src="meditation.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section id="mood-tracking" class="container">
+        <h2>Mood Tracking</h2>
+        <div id="mood-tracker" >
+            <input type="date" id="mood-date">
+            <select id="mood-select">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="neutral">Neutral</option>
+            </select>
+            <button id="save-mood">Save Mood</button>
+            <div id="mood-log"></div>
+        </div>
+        
+   
+        <script src="landing.js"></script>
+
+</body>
+</html>
